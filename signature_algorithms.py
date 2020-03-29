@@ -10,8 +10,6 @@ from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_PSS
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.Signature import pss
-
-
 from Crypto import Random
 
 def DSA_sign(key, h):
@@ -115,14 +113,14 @@ def ECDSA_times(tests_information):
 
 def RSA_PSS_sign(key, message):
         h = SHA256.new(message)
-        signer = PKCS1_PSS.new(key)
+        signer = pss.new(key)
         return signer.sign(h)
 
 def RSA_PSS_verify(message, key, sign):
     try:
         h = SHA256.new(message)
         verifier = pss.new(key)
-        verifier.verify(h, sign)
+        verifier.verify(h, sign)    
     except ValueError:
         print ('The message is not authentic')
 
@@ -155,7 +153,7 @@ def print_cipher_times(DSA, ECDSA, RSA_PSS):
     RSA_PSS_total_time = 0
 
     print('\n\t#------------------------------------------------------------------------------------------------------#')
-    print('\t|                                                     Cifrado                                          |')             
+    print('\t|                                              FIRMA                                                   |')             
     print('\t#------------------------------------------------------------------------------------------------------#')
     print('\t|     No. Vector      |          DSA          |          ECDSA          |          RSA_PSS             |')
     print('\t#------------------------------------------------------------------------------------------------------#')
@@ -176,7 +174,7 @@ def print_descipher_times(DSA, ECDSA, RSA_PSS):
     RSA_PSS_total_time = 0
 
     print('\n\t#------------------------------------------------------------------------------------------------------#')
-    print('\t|                                            Descifrado                                                |')             
+    print('\t|                                            Verificación                                              |')             
     print('\t#------------------------------------------------------------------------------------------------------#')
     print('\t|     No. Vector      |          DSA          |          ECDSA          |          RSA_PSS             |')
     print('\t#------------------------------------------------------------------------------------------------------#')

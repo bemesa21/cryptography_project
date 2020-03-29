@@ -1,0 +1,512 @@
+********************************************************************************
+*Project NESSIE - New European Schemes for Signature, Integrity, and Encryption*
+********************************************************************************
+
+Primitive Name: Rijndael
+========================
+Key size: 128 bits
+Block size: 128 bits
+
+Test vectors -- set 1
+=====================
+
+Set 1, vector#  0:
+                           key=80000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=0EDD33D3C621E546455BD8BA1418BEC8
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=330CBD8A445FF956AE4F9DD3FF84A388
+           Iterated 1000 times=9C90AD5F26A9D68592E9FA072173178F
+
+Set 1, vector#  1:
+                           key=40000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=C0CC0C5DA5BD63ACD44A80774FAD5222
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=012A26099AB01DE127A884A53E01C335
+           Iterated 1000 times=D1CB93246484E7703B86407F39A4AB67
+
+Set 1, vector#  2:
+                           key=20000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=2F0B4B71BC77851B9CA56D42EB8FF080
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=0403C1A536EF743D8C4A91CFA8DF942F
+           Iterated 1000 times=BA2A3BDF37ADC1234F1C981E3D11B1B6
+
+Set 1, vector#  3:
+                           key=10000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=6B1E2FFFE8A114009D8FE22F6DB5F876
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=1418E68484B9C6C1FCC5AAB7AB66886E
+           Iterated 1000 times=A198CB30347BC4C786C8FFCAF3455B67
+
+Set 1, vector#  4:
+                           key=08000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=9AA042C315F94CBB97B62202F83358F5
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=906902659346184B3AEA4BAD8CCF0FA7
+           Iterated 1000 times=6ECFB32309135ECF480E67D58D1E4342
+
+Set 1, vector#  5:
+                           key=04000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=DBE01DE67E346A800C4C4B4880311DE4
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=F3AB7D502A1C41804A63CD344A973EF5
+           Iterated 1000 times=52E25B7E53C872032A155F425099071E
+
+
+Test vectors -- set 2
+=====================
+
+Set 2, vector#  0:
+                           key=00000000000000000000000000000000
+                         plain=80000000000000000000000000000000
+                        cipher=3AD78E726C1EC02B7EBFE92B23D9EC34
+                     decrypted=80000000000000000000000000000000
+            Iterated 100 times=690A23A652BD5FCABF7CE84B369E8ED4
+           Iterated 1000 times=AEB75A7AFDF5837BFC12EB381FC624AF
+
+Set 2, vector#  1:
+                           key=00000000000000000000000000000000
+                         plain=40000000000000000000000000000000
+                        cipher=45BC707D29E8204D88DFBA2F0B0CAD9B
+                     decrypted=40000000000000000000000000000000
+            Iterated 100 times=7ED34319D8CBEF6B5F2154FE48E6FD60
+           Iterated 1000 times=9FD03D7869DF051825AA502A6E66BA76
+
+Set 2, vector#  2:
+                           key=00000000000000000000000000000000
+                         plain=20000000000000000000000000000000
+                        cipher=161556838018F52805CDBD6202002E3F
+                     decrypted=20000000000000000000000000000000
+            Iterated 100 times=7A4C17EBECF76338702F34029A4BD03B
+           Iterated 1000 times=71D8834872A5C1B9377D212AB1E350B9
+
+Set 2, vector#  3:
+                           key=00000000000000000000000000000000
+                         plain=10000000000000000000000000000000
+                        cipher=F5569B3AB6A6D11EFDE1BF0A64C6854A
+                     decrypted=10000000000000000000000000000000
+            Iterated 100 times=66C92A8E962637A1DE1F16507B7D27A6
+           Iterated 1000 times=AA0F567198B81DD201914B76CAB324E7
+
+Set 2, vector#  4:
+                           key=00000000000000000000000000000000
+                         plain=08000000000000000000000000000000
+                        cipher=64E82B50E501FBD7DD4116921159B83E
+                     decrypted=08000000000000000000000000000000
+            Iterated 100 times=E1D206E01DB01026432CBEDDC4096E64
+           Iterated 1000 times=C11936ABDF55F2A6CBD118BD8CEA1EF6
+
+ 
+Test vectors -- set 3
+=====================
+
+Set 3, vector#  0:
+                           key=00000000000000000000000000000000
+                         plain=00000000000000000000000000000000
+                        cipher=66E94BD4EF8A2C3B884CFA59CA342B2E
+                     decrypted=00000000000000000000000000000000
+            Iterated 100 times=73EC274B42DECC2A923D973D31289803
+           Iterated 1000 times=ADC883CF76C234032F31B33734AA4B51
+
+Set 3, vector#  1:
+                           key=01010101010101010101010101010101
+                         plain=01010101010101010101010101010101
+                        cipher=5E77E59F8F85943489A24149C75F4EC9
+                     decrypted=01010101010101010101010101010101
+            Iterated 100 times=12B53FDCA81E4ACEB38D46485BF24752
+           Iterated 1000 times=A593C6383EE8EFB8F80B6AD349693818
+
+Set 3, vector#  2:
+                           key=02020202020202020202020202020202
+                         plain=02020202020202020202020202020202
+                        cipher=43B378ED857DA9A583C856EB51863406
+                     decrypted=02020202020202020202020202020202
+            Iterated 100 times=C0237D95F2804364194F7A5F1665D756
+           Iterated 1000 times=BBB6A3DEAE540BFEC8F7E11ECCAA0463
+
+Set 3, vector#  3:
+                           key=03030303030303030303030303030303
+                         plain=03030303030303030303030303030303
+                        cipher=A96234EEBFEE97D21499E90E501572D1
+                     decrypted=03030303030303030303030303030303
+            Iterated 100 times=716BF13563AC345393B4A073EA641B99
+           Iterated 1000 times=68FBEF3EDA724865E741DBB56ED9E5A3
+
+Set 3, vector#  4:
+                           key=04040404040404040404040404040404
+                         plain=04040404040404040404040404040404
+                        cipher=C919680C70B6A9BA9DA6F83E9326D306
+                     decrypted=04040404040404040404040404040404
+            Iterated 100 times=A0CB255A64654B5B51D8A735E3A5CB1B
+           Iterated 1000 times=3DC54B23EC3A1C41C1F2804F9F6D8E16
+
+Set 3, vector#  5:
+                           key=05050505050505050505050505050505
+                         plain=05050505050505050505050505050505
+                        cipher=1DA2B348D561131CC9A404F09CE882A0
+                     decrypted=05050505050505050505050505050505
+            Iterated 100 times=1A7DF386360471BEAD0F7234EE3C7A52
+           Iterated 1000 times=64ECD61AA71E66B1649715BC07FC6C40
+
+
+Test vectors -- set 4
+=====================
+
+Set 4, vector#  0:
+                           key=000102030405060708090A0B0C0D0E0F
+                         plain=00112233445566778899AABBCCDDEEFF
+                        cipher=69C4E0D86A7B0430D8CDB78070B4C55A
+                     decrypted=00112233445566778899AABBCCDDEEFF
+            Iterated 100 times=178BAFF4CE4DF4E2077F259215464AAA
+           Iterated 1000 times=B7449C8DA15DEFEB78DBC57EA81DB8EE
+
+Set 4, vector#  1:
+                           key=2BD6459F82C5B300952C49104881FF48
+                         plain=EA024714AD5C4D84EA024714AD5C4D84
+                        cipher=13C2C18F15299BC26AEDADD118AE537D
+                     decrypted=EA024714AD5C4D84EA024714AD5C4D84
+            Iterated 100 times=D9010CC77860BF5B39D381B334910EE6
+           Iterated 1000 times=850C4B90002090D6F4CB42F7C2DA0A1B
+
+Test vectors -- set 5
+=====================
+
+Set 5, vector#  0:
+                           key=80000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=BCC968EFC8709B5F9FDCBABD87CA9961
+                     encrypted=00000000000000000000000000000000
+
+Set 5, vector#  1:
+                           key=40000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=58F1F0C380969EE084A455F7BA4259DE
+                     encrypted=00000000000000000000000000000000
+
+Set 5, vector#  2:
+                           key=20000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=920F58E597A49C5CDB582E9936D1BAC2
+                     encrypted=00000000000000000000000000000000
+
+Set 5, vector#  3:
+                           key=10000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=C95665B5B8F1E25AA42E102DA22B19ED
+                     encrypted=00000000000000000000000000000000
+
+Set 5, vector#  4:
+                           key=08000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=F2D73AC0B401CDA593288471252B3076
+                     encrypted=00000000000000000000000000000000
+
+Set 5, vector#  5:
+                           key=04000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=78D3950202847ADD7F4CB8964DDD29AF
+                     encrypted=00000000000000000000000000000000
+
+
+Test vectors -- set 6
+=====================
+
+Set 6, vector#  0:
+                           key=00000000000000000000000000000000
+                        cipher=80000000000000000000000000000000
+                         plain=7636B952AEA4D79F16D5CC3F05FDC0FA
+                     encrypted=80000000000000000000000000000000
+
+Set 6, vector#  1:
+                           key=00000000000000000000000000000000
+                        cipher=40000000000000000000000000000000
+                         plain=88FB0C82D06C6891163E348EDDD3E56E
+                     encrypted=40000000000000000000000000000000
+
+Set 6, vector#  2:
+                           key=00000000000000000000000000000000
+                        cipher=20000000000000000000000000000000
+                         plain=60E3B32B3B545C73EDA24832B11F7E3D
+                     encrypted=20000000000000000000000000000000
+
+Set 6, vector#  3:
+                           key=00000000000000000000000000000000
+                        cipher=10000000000000000000000000000000
+                         plain=0837840FB7C9FD0B7998C3CBF973C204
+                     encrypted=10000000000000000000000000000000
+
+Set 6, vector#  4:
+                           key=00000000000000000000000000000000
+                        cipher=08000000000000000000000000000000
+                         plain=6FCDB8A23558DA812210832F7E9ACF7D
+                     encrypted=08000000000000000000000000000000
+
+Set 6, vector#  5:
+                           key=00000000000000000000000000000000
+                        cipher=04000000000000000000000000000000
+                         plain=E60F7A5F564710B6585DE58962A80B7A
+                     encrypted=04000000000000000000000000000000
+
+
+Test vectors -- set 7
+=====================
+
+Set 7, vector#  0:
+                           key=00000000000000000000000000000000
+                        cipher=00000000000000000000000000000000
+                         plain=140F0F1011B5223D79587717FFD9EC3A
+                     encrypted=00000000000000000000000000000000
+
+Set 7, vector#  1:
+                           key=01010101010101010101010101010101
+                        cipher=01010101010101010101010101010101
+                         plain=BC6E2BAF23CA1E66AAD7B395C1D6A60A
+                     encrypted=01010101010101010101010101010101
+
+Set 7, vector#  2:
+                           key=02020202020202020202020202020202
+                        cipher=02020202020202020202020202020202
+                         plain=5C2945A88EBA582116FD19A7DE6A5A25
+                     encrypted=02020202020202020202020202020202
+
+Set 7, vector#  3:
+                           key=03030303030303030303030303030303
+                        cipher=03030303030303030303030303030303
+                         plain=729822B63A7F2C157F884621B623EF2D
+                     encrypted=03030303030303030303030303030303
+
+Set 7, vector#  4:
+                           key=04040404040404040404040404040404
+                        cipher=04040404040404040404040404040404
+                         plain=FFDAE16C0AC93F15D720FC3BB1920C76
+                     encrypted=04040404040404040404040404040404
+
+Set 7, vector#  5:
+                           key=05050505050505050505050505050505
+                        cipher=05050505050505050505050505050505
+                         plain=00FF0BA7FCA3D008CB44B8E3B476F2CA
+                     encrypted=05050505050505050505050505050505
+
+Set 7, vector#  6:
+                           key=06060606060606060606060606060606
+                        cipher=06060606060606060606060606060606
+                         plain=BBB75CBFE1357B2CDFCF1AC15CA4479C
+                     encrypted=06060606060606060606060606060606
+
+Set 7, vector#  7:
+                           key=07070707070707070707070707070707
+                        cipher=07070707070707070707070707070707
+                         plain=D57281C6F576924D43553B36D10C92EB
+                     encrypted=07070707070707070707070707070707
+
+Set 7, vector#  8:
+                           key=08080808080808080808080808080808
+                        cipher=08080808080808080808080808080808
+                         plain=BC9D3539E3AA63F96DD4BFC3E3C1DA73
+                     encrypted=08080808080808080808080808080808
+
+Set 7, vector#  9:
+                           key=09090909090909090909090909090909
+                        cipher=09090909090909090909090909090909
+                         plain=B2BFF6CE20E91380B8E1AEA7F4C0682C
+                     encrypted=09090909090909090909090909090909
+
+Set 7, vector# 10:
+                           key=0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+                        cipher=0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+                         plain=CB332417BD894DF0FE6B092F59390F7E
+                     encrypted=0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+
+Set 7, vector# 11:
+                           key=0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B
+                        cipher=0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B
+                         plain=111683A64176D0DC61D0F018C930D88D
+                     encrypted=0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B
+
+Set 7, vector# 12:
+                           key=0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+                        cipher=0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+                         plain=2B0080138B16F1D242837971EA2D6C29
+                     encrypted=0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+
+Set 7, vector# 13:
+                           key=0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D
+                        cipher=0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D
+                         plain=B1FCADBE0AD1BD04457B0E7177A0E8BD
+                     encrypted=0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D0D
+
+Set 7, vector# 14:
+                           key=0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E
+                        cipher=0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E
+                         plain=237062C28C2470EC595A4B5F15184103
+                     encrypted=0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E0E
+
+Set 7, vector# 15:
+                           key=0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F
+                        cipher=0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F
+                         plain=699FBCE40B81EF72369EBF5CCABC85A0
+                     encrypted=0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F
+
+Set 7, vector# 16:
+                           key=10101010101010101010101010101010
+                        cipher=10101010101010101010101010101010
+                         plain=0C0492B37D1FB4C540835744D758D742
+                     encrypted=10101010101010101010101010101010
+
+Set 7, vector# 17:
+                           key=11111111111111111111111111111111
+                        cipher=11111111111111111111111111111111
+                         plain=C60002B94662D2560A1916D907C982B9
+                     encrypted=11111111111111111111111111111111
+
+Set 7, vector# 18:
+                           key=12121212121212121212121212121212
+                        cipher=12121212121212121212121212121212
+                         plain=89C75CFAEE8B2115301FB14329750E7C
+                     encrypted=12121212121212121212121212121212
+
+Set 7, vector# 19:
+                           key=13131313131313131313131313131313
+                        cipher=13131313131313131313131313131313
+                         plain=720763C16586D435E11F23727F3E5765
+                     encrypted=13131313131313131313131313131313
+
+Set 7, vector# 20:
+                           key=14141414141414141414141414141414
+                        cipher=14141414141414141414141414141414
+                         plain=5745460D6A74E539186806FA737776B3
+                     encrypted=14141414141414141414141414141414
+
+Set 7, vector# 21:
+                           key=15151515151515151515151515151515
+                        cipher=15151515151515151515151515151515
+                         plain=FADF025EF36EF95DD542CB995ACC5E09
+                     encrypted=15151515151515151515151515151515
+
+Set 7, vector# 22:
+                           key=16161616161616161616161616161616
+                        cipher=16161616161616161616161616161616
+                         plain=724406E4D1FF6B8D6C562394823E64E1
+                     encrypted=16161616161616161616161616161616
+
+Set 7, vector# 23:
+                           key=17171717171717171717171717171717
+                        cipher=17171717171717171717171717171717
+                         plain=87DC2865B5F5346A1D2B89EE59CE84BA
+                     encrypted=17171717171717171717171717171717
+
+Set 7, vector# 24:
+                           key=18181818181818181818181818181818
+                        cipher=18181818181818181818181818181818
+                         plain=CF9704F5E08D2CD16034FFC2340B1B90
+                     encrypted=18181818181818181818181818181818
+
+Set 7, vector# 25:
+                           key=19191919191919191919191919191919
+                        cipher=19191919191919191919191919191919
+                         plain=25082DC880527F24DE4CD77039155C3C
+                     encrypted=19191919191919191919191919191919
+
+Set 7, vector# 26:
+                           key=1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A
+                        cipher=1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A
+                         plain=951C5D1A1D61D559D6ACB9AA52B35768
+                     encrypted=1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A
+
+Set 7, vector# 27:
+                           key=1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B
+                        cipher=1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B
+                         plain=6CBE694E7B3EDBD5E2F7C2DB4E8B4D71
+                     encrypted=1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B1B
+
+Set 7, vector# 28:
+                           key=1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C
+                        cipher=1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C
+                         plain=7A50D72D355A7645C0CCC640CAA7F2D3
+                     encrypted=1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C1C
+
+Set 7, vector# 29:
+                           key=1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D
+                        cipher=1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D
+                         plain=812FB8687F2E0B91497E8CEB00750AFD
+                     encrypted=1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D
+
+Set 7, vector# 30:
+                           key=1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E
+                        cipher=1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E
+                         plain=A8C270C403B324989076F7799349A821
+                     encrypted=1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E
+
+Set 7, vector# 31:
+                           key=1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F
+                        cipher=1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F
+                         plain=4812680D4C2AC98223378EA2B546CD56
+                     encrypted=1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F
+
+Set 7, vector# 32:
+                           key=20202020202020202020202020202020
+                        cipher=20202020202020202020202020202020
+                         plain=EC8211FE4D2573DCE7DA514DBEDCB6F9
+                     encrypted=20202020202020202020202020202020
+
+Set 7, vector# 33:
+                           key=21212121212121212121212121212121
+                        cipher=21212121212121212121212121212121
+                         plain=814381DFD79BFF014D1AADB021B60B83
+                     encrypted=21212121212121212121212121212121
+
+Set 7, vector# 34:
+                           key=22222222222222222222222222222222
+                        cipher=22222222222222222222222222222222
+                         plain=5BF8B09ABD02A1602E61638567F12766
+                     encrypted=22222222222222222222222222222222
+
+Set 7, vector# 35:
+                           key=23232323232323232323232323232323
+                        cipher=23232323232323232323232323232323
+                         plain=4858F8392041E904B199F5126235CD32
+                     encrypted=23232323232323232323232323232323
+
+Set 7, vector# 36:
+                           key=24242424242424242424242424242424
+                        cipher=24242424242424242424242424242424
+                         plain=5D984C185392D7B3EAE14A71E2B22FC4
+                     encrypted=24242424242424242424242424242424
+
+Set 7, vector# 37:
+                           key=25252525252525252525252525252525
+                        cipher=25252525252525252525252525252525
+                         plain=A5D990875845B6F2B3C550653B2A151A
+                     encrypted=25252525252525252525252525252525
+
+Set 7, vector# 38:
+                           key=26262626262626262626262626262626
+                        cipher=26262626262626262626262626262626
+                         plain=7ED69C8369750E6DEC8645F7DB42E9EE
+                     encrypted=26262626262626262626262626262626
+
+
+Test vectors -- set 8
+=====================
+
+Set 8, vector#  0:
+                           key=000102030405060708090A0B0C0D0E0F
+                        cipher=00112233445566778899AABBCCDDEEFF
+                         plain=762A5AB50929189CEFDB99434790AAD8
+                     encrypted=00112233445566778899AABBCCDDEEFF
+
+Set 8, vector#  1:
+                           key=2BD6459F82C5B300952C49104881FF48
+                        cipher=EA024714AD5C4D84EA024714AD5C4D84
+                         plain=E99388EED41AD8058D6162B0CF4667E6
+                     encrypted=EA024714AD5C4D84EA024714AD5C4D84
+
+
+
+End of test vectors
