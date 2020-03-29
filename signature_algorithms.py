@@ -205,6 +205,6 @@ def compare_signature_algorithms():
     [sign_DSA_times, verify_DSA_times] = ECDSA_times(tests_information)
     [sign_RSA_PSS_rimes, verify_RSA_PSS_times] = RSA_PSS_times()
     print_cipher_times(sign_DSA_times, sign_ECDSA_times, sign_RSA_PSS_rimes)
-    print_descipher_times(verify_DSA_times, verify_DSA_times, verify_RSA_PSS_times)
+    print_descipher_times(verify_DSA_times, verify_ECDSA_times, verify_RSA_PSS_times)
 
 
