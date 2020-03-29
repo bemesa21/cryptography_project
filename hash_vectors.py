@@ -26,8 +26,8 @@ def set3_vectors():
 def hash_vectors():
     set1 = set1_input_vectors()
     set1_p = set1_programed_vectors()
-    #set2 = set2_vectors()
-    #set3 = set3_vectors()
-    return set1 + set1_p #+ set2 + set3
+    set2 = set2_vectors()
+    set3 = set3_vectors()
+    return set1 + set1_p# + set2 + set3
 
 

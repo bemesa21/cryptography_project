@@ -1,0 +1,10 @@
+SHA-1,sample
+SHA-224,sample
+SHA-256,sample
+SHA-384,sample
+SHA-512,sample
+SHA-1,test
+SHA-224,test
+SHA-256,test
+SHA-384,test
+SHA-512,test
