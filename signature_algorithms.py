@@ -9,6 +9,8 @@ from Crypto.PublicKey import DSA
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_PSS
 from Crypto.Cipher import PKCS1_OAEP
+from Crypto.Signature import pss
+
 
 from Crypto import Random
 
@@ -22,6 +24,20 @@ def DSA_verify(sign, key, h):
         verifier.verify(h, sign)
     except ValueError:
         print ('The message is not authentic')
+
+def hashed_message(hash_type, message):
+    if hash_type =='SHA-1':
+        h = SHA.new(bytes(message, 'utf-8'))
+    elif hash_type =='SHA-224':
+        h = SHA256.new(bytes(message, 'utf-8'))
+    elif hash_type =='SHA-256':
+        h = SHA256.new(bytes(message, 'utf-8'))
+    elif hash_type =='SHA-384':
+        h = SHA384.new(bytes(message, 'utf-8'))
+    else:
+        h = SHA256.new(bytes(message, 'utf-8'))
+
+    return h
 
         
 def DSA_times(tests_information):
@@ -38,20 +54,7 @@ def DSA_times(tests_information):
     print(key)
     for t in tests_information:
         [hash_type, message] = t.split(',')
-        if hash_type =='SHA-1':
-            h = SHA.new(bytes(message, 'utf-8'))
-
-        elif hash_type =='SHA-224':
-            h = SHA256.new(bytes(message, 'utf-8'))
-
-        elif hash_type =='SHA-256':
-            h = SHA256.new(bytes(message, 'utf-8'))
-
-        elif hash_type =='SHA-384':
-            h = SHA384.new(bytes(message, 'utf-8'))
-        
-        else:
-            h = SHA256.new(bytes(message, 'utf-8'))
+        h = hashed_message(hash_type, message)
             
         #sign
         start_time = time.perf_counter()
@@ -91,20 +94,8 @@ def ECDSA_times(tests_information):
     verify_times = []
     for t in tests_information:
         [hash_type, message] = t.split(',')
-        if hash_type =='SHA-1':
-            h = SHA.new(bytes(message, 'utf-8'))
+        h = hashed_message(hash_type, message)
 
-        elif hash_type =='SHA-224':
-            h = SHA256.new(bytes(message, 'utf-8'))
-
-        elif hash_type =='SHA-256':
-            h = SHA256.new(bytes(message, 'utf-8'))
-
-        elif hash_type =='SHA-384':
-            h = SHA384.new(bytes(message, 'utf-8'))
-        
-        else:
-            h = SHA256.new(bytes(message, 'utf-8'))
             
         #sign
         start_time = time.perf_counter()
@@ -127,10 +118,10 @@ def RSA_PSS_sign(key, message):
         signer = PKCS1_PSS.new(key)
         return signer.sign(h)
 
-def RSA_PSS_verify(key, sign):
+def RSA_PSS_verify(message, key, sign):
     try:
-        h = SHA256.new(sign)
-        verifier = PKCS1_PSS.new(key)
+        h = SHA256.new(message)
+        verifier = pss.new(key)
         verifier.verify(h, sign)
     except ValueError:
         print ('The message is not authentic')
@@ -150,7 +141,7 @@ def RSA_PSS_times():
 
         # To verify
         start_time = time.perf_counter()
-        RSA_PSS_verify(key, sign)
+        RSA_PSS_verify(message, key, sign)
         elapsed_time = time.perf_counter() - start_time
 
         verify_times.append(elapsed_time)
