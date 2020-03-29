@@ -8,7 +8,7 @@ def set1_programed_vectors():
 
 def set2_vectors():
     vectors = []
-    for i in range(8, 1024, 8):
+    for i in range(8, 80, 8):
         vectors.append(b'\x00' * (i // 8))
     return vectors
 
@@ -28,6 +28,6 @@ def hash_vectors():
     set1_p = set1_programed_vectors()
     set2 = set2_vectors()
     set3 = set3_vectors()
-    return set1 + set1_p# + set2 + set3
+    return set1 + set1_p + set2 + set3
 
 
